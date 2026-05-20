@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos html5</title>
+</head>
+<body>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>esse video está hospedado no meu proprio servidor</p>
+    <video src="midias/meu-video.mp4.mp4" controls width="500"></video>
+    <p>sempre coloca todas as extensoes para evitar imcompatibilidade, mp4,webm, ogv</p>
+
+    <video width="560" poster="imagens/tumb-video.png" controls>
+
+        <source src="midias/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midias/meu-video.webm.webm" type="video/webm">
+        <p>seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+    <p>a ordem do video tem que ser por tamanho do arquivo, do maior para o menor</p>
+
+    <h1>inserindo videos do youtube</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1tjuhCdWPB4?si=vpBhSb9a4VrWIt6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkblue;
+        }
+
+        a.hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellowgreen;
+        }
+        
+        
+        .especial::before{
+            content: '(before)';
+        }
+        .especial::after{
+            content: '(after)';
+        }
+    
+
+    </style>
+    /*simbolos utilizaveis CSS 
+    
+    # = id 
+    . = class
+    : = pseudoclasse
+    :: = pseudo-element
+    > = children
+    
+    */
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <a href="https://gustavoguanabara.github.io" target="_blank" class="especial">
+            <li>repositorio github</li>
+        </a>
+        <a href="https://youtube.com/cursoemvideo/" target="_blank">
+            <li>canal do youtube</li>
+        </a>
+        <a href="https://www.cursoemvideo.com" target="_blank">
+            <li>site do curso em video</li>
+        </a>
+    </ul>
+<p><strong>A:ACTIVE É O QUE ACONTECE QUANDO VOCE CLICA NO LINK, NO CASO</strong></p>
+<p><strong>a.visited é uma pseudoclasse, representada somente com um ponto</strong></p>
+<p><strong>a::after e um pseudoelemento, representado com 2 x 2 pontos</strong></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/ImagemP.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/ImagemM.png" type="image/png">
+        <img src="imagens/ImagemG.png" alt="imagem flexivel">
+        <!--a organização dos sources, tem que ser do menor para o maior de cima para baixo igual está ! -->
+        <p>organização dos sources, tem que ser do menor para o maior de cima para baixo igual está</p>
+    </picture>
+
+    <h1>reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audios em html5</p>
+    <audio src="midias/kromaspere-shine-byte-run-the-block-521221.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG, COMPATIBILIDADE DE 99%-->
+    <audio preload="metadata" controls loop>
+
+        <source src="midias/kromaspere-shine-byte-run-the-block-521221.mp3" type="audio/mpeg">
+        <source src="" type="">
+        <p>infelizmente seu navegador nãoconsegue reproduzir audio</p>
+    </audio>
+
+</body>
+</html>
