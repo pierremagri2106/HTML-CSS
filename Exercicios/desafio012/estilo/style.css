@@ -60,18 +60,40 @@ section {
 
 section.normal {
     background-color: white;
-    color: rgba(102, 101, 101, 0.705);
+    color: rgba(0, 0, 0, 0.705);
 }
 
 section.imagem {
     background-color: rgba(63, 62, 62, 0.137);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.397);
+    background-attachment: fixed; /*imagem fixa no fundo do site mesmo com rolagem */
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.527);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section#img02{
+
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+
+section > p {
+    padding-bottom:2em ;
 }
 
 footer{
